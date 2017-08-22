@@ -8,7 +8,7 @@ def song_dload(url,filename):
 song_url=[]
 filename=[]
 inp=raw_input("Enter movie name \n")
-url="https://www.google.co.in/search?q=naasongs+"+inp
+url="https://www.google.co.in/search?q=naasongs.com+"+inp
 r=requests.get(url)
 soup=BeautifulSoup(r.content,'html.parser')
 bang=str(soup.find('h3'))
